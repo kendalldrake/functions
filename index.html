@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capstone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="foreground">
-        <h1>ARRIVAL TIME</h1>
+        <h1>Input Your Expected Arrival Time</h1>
         <div class="timeinput">
             <input type="time" id="appt" name="appt"required>
 
@@ -23,21 +26,34 @@
                 <option value="Sun">Sunday</option>
               </select>
 
-            <input type="date" id="start" name="trip-start"
+            <!-- <input type="date" id="start" name="trip-start"
             value="2023-04-23"
-            min="2023-01-01" max="2024-12-31">
+            min="2023-01-01" max="2024-12-31"> -->
 
         </div>
         <div class="buttoncontainer">
-            <div><button id="B1"><img src="./building-01.png" alt="Elevator L1"></button><h1>Elevator L1</h1></div>
-            <div><button id="B2"><img src="./building-01.png" alt="Elevator B1"></button><h1>Elevator B1</h1></div>
-            <div><button id="B3"><img src="./building-01.png" alt="Elevator B2"></button><h1>Elevator B2</h1></div>
-            <div><button id="B4"><img src="./building-01.png" alt="Elevator A1"></button><h1>Elevator A1</h1></div>
+            <div><button id="B1"><img src="./L1.png" alt="Elevator L1"></button><h1>Elevator L1 (Red Cage)</h1></div>
+            <div><button id="B2"><img src="./B1.png" alt="Elevator B1"></button><h1>Elevator B1 (Opposite Lockers in the Lobby)</h1></div>
+            <div><button id="B3"><img src="./B2.png" alt="Elevator B2"></button><h1>Elevator B2 (Opposite Lockers in the Lobby)</h1></div>
+            <div><button id="B4"><img src="./A1.png" alt="Elevator A1"></button><h1>Elevator A1 (Past the Gallery)</h1></div>
         </div>
         <div id="heatmap">
             <progress value="75" min="0" max="100" style="visibility:hidden;height:0;width:0;">75%</progress>
             <div id="stat">75%</div>
         </div>
+        <div id="heatmap">
+            <progress value="75" min="0" max="100" style="visibility:hidden;height:0;width:0;">75%</progress>
+            <div id="stat">75%</div>
+        </div>
+        <div id="heatmap">
+            <progress value="75" min="0" max="100" style="visibility:hidden;height:0;width:0;">75%</progress>
+            <div id="stat">75%</div>
+        </div>
+        <div id="heatmap">
+            <progress value="75" min="0" max="100" style="visibility:hidden;height:0;width:0;">75%</progress>
+            <div id="stat">75%</div>
+        </div>
+        
     </div>
     
 </body>
