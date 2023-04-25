@@ -1,0 +1,730 @@
+{
+    "L1": {
+        "Monday": {
+            "9-11 am": {
+                "count": 11,
+                "percentage": "58%"
+            },
+            "11am-1pm": {
+                "count": 10,
+                "percentage": "53%"
+            },
+            "1pm-3pm": {
+                "count": 4,
+                "percentage": "21%"
+            },
+            "3-5pm": {
+                "count": 3,
+                "percentage": "16%"
+            },
+            "5-7pm": {
+                "count": 5,
+                "percentage": "26%"
+            },
+            "7-9pm": {
+                "count": 6,
+                "percentage": "32%"
+            },
+            "9-11pm": {
+                "count": 4,
+                "percentage": "21%"
+            }
+        },
+        "Tuesday": {
+            "9-11 am": {
+                "count": 2,
+                "percentage": "11%"
+            },
+            "11am-1pm": {
+                "count": 2,
+                "percentage": "11%"
+            },
+            "1pm-3pm": {
+                "count": 3,
+                "percentage": "16%"
+            },
+            "3-5pm": {
+                "count": 3,
+                "percentage": "16%"
+            },
+            "5-7pm": {
+                "count": 4,
+                "percentage": "21%"
+            },
+            "7-9pm": {
+                "count": 3,
+                "percentage": "16%"
+            },
+            "9-11pm": {
+                "count": 4,
+                "percentage": "21%"
+            }
+        },
+        "Wednesday": {
+            "9-11 am": {
+                "count": 9,
+                "percentage": "47%"
+            },
+            "11am-1pm": {
+                "count": 7,
+                "percentage": "37%"
+            },
+            "1pm-3pm": {
+                "count": 3,
+                "percentage": "16%"
+            },
+            "3-5pm": {
+                "count": 3,
+                "percentage": "16%"
+            },
+            "5-7pm": {
+                "count": 4,
+                "percentage": "21%"
+            },
+            "7-9pm": {
+                "count": 8,
+                "percentage": "42%"
+            },
+            "9-11pm": {
+                "count": 6,
+                "percentage": "32%"
+            }
+        },
+        "Thursday": {
+            "9-11 am": {
+                "count": 5,
+                "percentage": "26%"
+            },
+            "11am-1pm": {
+                "count": 5,
+                "percentage": "26%"
+            },
+            "1pm-3pm": {
+                "count": 3,
+                "percentage": "16%"
+            },
+            "3-5pm": {
+                "count": 3,
+                "percentage": "16%"
+            },
+            "5-7pm": {
+                "count": 6,
+                "percentage": "32%"
+            },
+            "7-9pm": {
+                "count": 5,
+                "percentage": "26%"
+            },
+            "9-11pm": {
+                "count": 4,
+                "percentage": "21%"
+            }
+        },
+        "Friday": {
+            "9-11 am": {
+                "count": 2,
+                "percentage": "11%"
+            },
+            "11am-1pm": {
+                "count": 5,
+                "percentage": "26%"
+            },
+            "1pm-3pm": {
+                "count": 3,
+                "percentage": "16%"
+            },
+            "3-5pm": {
+                "count": 3,
+                "percentage": "16%"
+            },
+            "5-7pm": {
+                "count": 6,
+                "percentage": "32%"
+            },
+            "7-9pm": {
+                "count": 5,
+                "percentage": "26%"
+            },
+            "9-11pm": {
+                "count": 4,
+                "percentage": "21%"
+            }
+        },
+        "Saturday": {
+            "9-11 am": {
+                "count": 2,
+                "percentage": "5%"
+            },
+            "11am-1pm": {
+                "count": 5,
+                "percentage": "5%"
+            },
+            "1pm-3pm": {
+                "count": 3,
+                "percentage": "5%"
+            },
+            "3-5pm": {
+                "count": 3,
+                "percentage": "5%"
+            },
+            "5-7pm": {
+                "count": 6,
+                "percentage": "5%"
+            },
+            "7-9pm": {
+                "count": 5,
+                "percentage": "5%"
+            },
+            "9-11pm": {
+                "count": 4,
+                "percentage": "5%"
+            }
+        }
+    },
+    "B1": {
+        "Monday": {
+            "9-11 am": {
+                "count": 11,
+                "percentage": "42%"
+            },
+            "11am-1pm": {
+                "count": 10,
+                "percentage": "32%"
+            },
+            "1pm-3pm": {
+                "count": 4,
+                "percentage": "16%"
+            },
+            "3-5pm": {
+                "count": 3,
+                "percentage": "11%"
+            },
+            "5-7pm": {
+                "count": 5,
+                "percentage": "16%"
+            },
+            "7-9pm": {
+                "count": 6,
+                "percentage": "21%"
+            },
+            "9-11pm": {
+                "count": 4,
+                "percentage": "11%"
+            }
+        },
+        "Tuesday": {
+            "9-11 am": {
+                "count": 2,
+                "percentage": "16%"
+            },
+            "11am-1pm": {
+                "count": 2,
+                "percentage": "16%"
+            },
+            "1pm-3pm": {
+                "count": 3,
+                "percentage": "11%"
+            },
+            "3-5pm": {
+                "count": 3,
+                "percentage": "11%"
+            },
+            "5-7pm": {
+                "count": 4,
+                "percentage": "16%"
+            },
+            "7-9pm": {
+                "count": 3,
+                "percentage": "11%"
+            },
+            "9-11pm": {
+                "count": 4,
+                "percentage": "11%"
+            }
+        },
+        "Wednesday": {
+            "9-11 am": {
+                "count": 9,
+                "percentage": "42%"
+            },
+            "11am-1pm": {
+                "count": 7,
+                "percentage": "32%"
+            },
+            "1pm-3pm": {
+                "count": 3,
+                "percentage": "5%"
+            },
+            "3-5pm": {
+                "count": 3,
+                "percentage": "5%"
+            },
+            "5-7pm": {
+                "count": 4,
+                "percentage": "16%"
+            },
+            "7-9pm": {
+                "count": 8,
+                "percentage": "26%"
+            },
+            "9-11pm": {
+                "count": 6,
+                "percentage": "21%"
+            }
+        },
+        "Thursday": {
+            "9-11 am": {
+                "count": 5,
+                "percentage": "11%"
+            },
+            "11am-1pm": {
+                "count": 5,
+                "percentage": "5%"
+            },
+            "1pm-3pm": {
+                "count": 3,
+                "percentage": "0%"
+            },
+            "3-5pm": {
+                "count": 3,
+                "percentage": "0%"
+            },
+            "5-7pm": {
+                "count": 6,
+                "percentage": "16%"
+            },
+            "7-9pm": {
+                "count": 5,
+                "percentage": "11%"
+            },
+            "9-11pm": {
+                "count": 4,
+                "percentage": "16%"
+            }
+        },
+        "Friday": {
+            "9-11 am": {
+                "count": 2,
+                "percentage": "11%"
+            },
+            "11am-1pm": {
+                "count": 5,
+                "percentage": "5%"
+            },
+            "1pm-3pm": {
+                "count": 3,
+                "percentage": "5%"
+            },
+            "3-5pm": {
+                "count": 3,
+                "percentage": "5%"
+            },
+            "5-7pm": {
+                "count": 6,
+                "percentage": "5%"
+            },
+            "7-9pm": {
+                "count": 5,
+                "percentage": "5%"
+            },
+            "9-11pm": {
+                "count": 4,
+                "percentage": "5%"
+            }
+        },
+        "Saturday": {
+            "9-11 am": {
+                "count": 2,
+                "percentage": "5%"
+            },
+            "11am-1pm": {
+                "count": 5,
+                "percentage": "5%"
+            },
+            "1pm-3pm": {
+                "count": 3,
+                "percentage": "5%"
+            },
+            "3-5pm": {
+                "count": 3,
+                "percentage": "5%"
+            },
+            "5-7pm": {
+                "count": 6,
+                "percentage": "5%"
+            },
+            "7-9pm": {
+                "count": 5,
+                "percentage": "5%"
+            },
+            "9-11pm": {
+                "count": 4,
+                "percentage": "0%"
+            }
+        }
+    },
+    "B2": {
+        "Monday": {
+            "9-11 am": {
+                "count": 11,
+                "percentage": "37%"
+            },
+            "11am-1pm": {
+                "count": 10,
+                "percentage": "26%"
+            },
+            "1pm-3pm": {
+                "count": 4,
+                "percentage": "5%"
+            },
+            "3-5pm": {
+                "count": 3,
+                "percentage": "5%"
+            },
+            "5-7pm": {
+                "count": 5,
+                "percentage": "5%"
+            },
+            "7-9pm": {
+                "count": 6,
+                "percentage": "11%"
+            },
+            "9-11pm": {
+                "count": 4,
+                "percentage": "5%"
+            }
+        },
+        "Tuesday": {
+            "9-11 am": {
+                "count": 2,
+                "percentage": "11%"
+            },
+            "11am-1pm": {
+                "count": 2,
+                "percentage": "11%"
+            },
+            "1pm-3pm": {
+                "count": 3,
+                "percentage": "0%"
+            },
+            "3-5pm": {
+                "count": 3,
+                "percentage": "5%"
+            },
+            "5-7pm": {
+                "count": 4,
+                "percentage": "11%"
+            },
+            "7-9pm": {
+                "count": 3,
+                "percentage": "11%"
+            },
+            "9-11pm": {
+                "count": 4,
+                "percentage": "11%"
+            }
+        },
+        "Wednesday": {
+            "9-11 am": {
+                "count": 9,
+                "percentage": "37%"
+            },
+            "11am-1pm": {
+                "count": 7,
+                "percentage": "26%"
+            },
+            "1pm-3pm": {
+                "count": 3,
+                "percentage": "16%"
+            },
+            "3-5pm": {
+                "count": 3,
+                "percentage": "11%"
+            },
+            "5-7pm": {
+                "count": 4,
+                "percentage": "26%"
+            },
+            "7-9pm": {
+                "count": 8,
+                "percentage": "37%"
+            },
+            "9-11pm": {
+                "count": 6,
+                "percentage": "21%"
+            }
+        },
+        "Thursday": {
+            "9-11 am": {
+                "count": 5,
+                "percentage": "21%"
+            },
+            "11am-1pm": {
+                "count": 5,
+                "percentage": "11%"
+            },
+            "1pm-3pm": {
+                "count": 3,
+                "percentage": "5%"
+            },
+            "3-5pm": {
+                "count": 3,
+                "percentage": "0%"
+            },
+            "5-7pm": {
+                "count": 6,
+                "percentage": "16%"
+            },
+            "7-9pm": {
+                "count": 5,
+                "percentage": "11%"
+            },
+            "9-11pm": {
+                "count": 4,
+                "percentage": "16%"
+            }
+        },
+        "Friday": {
+            "9-11 am": {
+                "count": 2,
+                "percentage": "11%"
+            },
+            "11am-1pm": {
+                "count": 5,
+                "percentage": "5%"
+            },
+            "1pm-3pm": {
+                "count": 3,
+                "percentage": "5%"
+            },
+            "3-5pm": {
+                "count": 3,
+                "percentage": "5%"
+            },
+            "5-7pm": {
+                "count": 6,
+                "percentage": "5%"
+            },
+            "7-9pm": {
+                "count": 5,
+                "percentage": "5%"
+            },
+            "9-11pm": {
+                "count": 4,
+                "percentage": "5%"
+            }
+        },
+        "Saturday": {
+            "9-11 am": {
+                "count": 2,
+                "percentage": "5%"
+            },
+            "11am-1pm": {
+                "count": 5,
+                "percentage": "5%"
+            },
+            "1pm-3pm": {
+                "count": 3,
+                "percentage": "5%"
+            },
+            "3-5pm": {
+                "count": 3,
+                "percentage": "5%"
+            },
+            "5-7pm": {
+                "count": 6,
+                "percentage": "5%"
+            },
+            "7-9pm": {
+                "count": 5,
+                "percentage": "5%"
+            },
+            "9-11pm": {
+                "count": 4,
+                "percentage": "0%"
+            }
+        }
+    },
+    "A1": {
+        "Monday": {
+            "9-11 am": {
+                "count": 11,
+                "percentage": "32%"
+            },
+            "11am-1pm": {
+                "count": 10,
+                "percentage": "26%"
+            },
+            "1pm-3pm": {
+                "count": 4,
+                "percentage": "16%"
+            },
+            "3-5pm": {
+                "count": 3,
+                "percentage": "16%"
+            },
+            "5-7pm": {
+                "count": 5,
+                "percentage": "16%"
+            },
+            "7-9pm": {
+                "count": 6,
+                "percentage": "16%"
+            },
+            "9-11pm": {
+                "count": 4,
+                "percentage": "16%"
+            }
+        },
+        "Tuesday": {
+            "9-11 am": {
+                "count": 2,
+                "percentage": "5%"
+            },
+            "11am-1pm": {
+                "count": 2,
+                "percentage": "11%"
+            },
+            "1pm-3pm": {
+                "count": 3,
+                "percentage": "11%"
+            },
+            "3-5pm": {
+                "count": 3,
+                "percentage": "11%"
+            },
+            "5-7pm": {
+                "count": 4,
+                "percentage": "5%"
+            },
+            "7-9pm": {
+                "count": 3,
+                "percentage": "11%"
+            },
+            "9-11pm": {
+                "count": 4,
+                "percentage": "5%"
+            }
+        },
+        "Wednesday": {
+            "9-11 am": {
+                "count": 9,
+                "percentage": "42%"
+            },
+            "11am-1pm": {
+                "count": 7,
+                "percentage": "32%"
+            },
+            "1pm-3pm": {
+                "count": 3,
+                "percentage": "32%"
+            },
+            "3-5pm": {
+                "count": 3,
+                "percentage": "11%"
+            },
+            "5-7pm": {
+                "count": 4,
+                "percentage": "26%"
+            },
+            "7-9pm": {
+                "count": 8,
+                "percentage": "11%"
+            },
+            "9-11pm": {
+                "count": 6,
+                "percentage": "16%"
+            }
+        },
+        "Thursday": {
+            "9-11 am": {
+                "count": 5,
+                "percentage": "16%"
+            },
+            "11am-1pm": {
+                "count": 5,
+                "percentage": "11%"
+            },
+            "1pm-3pm": {
+                "count": 3,
+                "percentage": "5%"
+            },
+            "3-5pm": {
+                "count": 3,
+                "percentage": "11%"
+            },
+            "5-7pm": {
+                "count": 6,
+                "percentage": "21%"
+            },
+            "7-9pm": {
+                "count": 5,
+                "percentage": "16%"
+            },
+            "9-11pm": {
+                "count": 4,
+                "percentage": "16%"
+            }
+        },
+        "Friday": {
+            "9-11 am": {
+                "count": 2,
+                "percentage": "11%"
+            },
+            "11am-1pm": {
+                "count": 5,
+                "percentage": "5%"
+            },
+            "1pm-3pm": {
+                "count": 3,
+                "percentage": "5%"
+            },
+            "3-5pm": {
+                "count": 3,
+                "percentage": "5%"
+            },
+            "5-7pm": {
+                "count": 6,
+                "percentage": "5%"
+            },
+            "7-9pm": {
+                "count": 5,
+                "percentage": "5%"
+            },
+            "9-11pm": {
+                "count": 4,
+                "percentage": "5%"
+            }
+        },
+        "Saturday": {
+            "9-11 am": {
+                "count": 2,
+                "percentage": "5%"
+            },
+            "11am-1pm": {
+                "count": 5,
+                "percentage": "5%"
+            },
+            "1pm-3pm": {
+                "count": 3,
+                "percentage": "5%"
+            },
+            "3-5pm": {
+                "count": 3,
+                "percentage": "5%"
+            },
+            "5-7pm": {
+                "count": 6,
+                "percentage": "5%"
+            },
+            "7-9pm": {
+                "count": 5,
+                "percentage": "5%"
+            },
+            "9-11pm": {
+                "count": 4,
+                "percentage": "5%"
+            }
+        }
+    }
+}
