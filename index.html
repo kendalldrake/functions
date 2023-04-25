@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="foreground">
+    <!-- <div class="foreground">
         <h1>Input Your Expected Arrival Time</h1>
         <div class="timeinput">
             <input type="time" id="appt" name="appt"required>
@@ -24,20 +24,34 @@
                 <option value="Fri">Friday</option>
                 <option value="Sat">Saturday</option>
                 <option value="Sun">Sunday</option>
-              </select>
+              </select> -->
 
             <!-- <input type="date" id="start" name="trip-start"
             value="2023-04-23"
             min="2023-01-01" max="2024-12-31"> -->
 
-        </div>
+        <!-- </div> -->
+        
+        <label for="select-day">Select Day:</label>
+        <select id="select-day">
+        </select>
+        <label for="select-time">Select Time:</label>
+        <select id="select-time">
+        </select>
+        <br>
         <div class="buttoncontainer">
             <div><button id="B1"><img src="./L1.png" alt="Elevator L1"></button><h1>Elevator L1 (Red Cage)</h1></div>
             <div><button id="B2"><img src="./B1.png" alt="Elevator B1"></button><h1>Elevator B1 (Opposite Lockers in the Lobby)</h1></div>
             <div><button id="B3"><img src="./B2.png" alt="Elevator B2"></button><h1>Elevator B2 (Opposite Lockers in the Lobby)</h1></div>
             <div><button id="B4"><img src="./A1.png" alt="Elevator A1"></button><h1>Elevator A1 (Past the Gallery)</h1></div>
         </div>
-        <div id="heatmap">
+        <div class="progress-container">
+            <div id="progress-bar" style="background-color: lightblue; width: 0%; height: 20px;"></div>
+            <span id="percentage">0%</span>
+          </div>
+
+
+        <!-- <div id="heatmap">
             <progress value="75" min="0" max="100" style="visibility:hidden;height:0;width:0;">75%</progress>
             <div id="stat">75%</div>
         </div>
@@ -52,7 +66,7 @@
         <div id="heatmap">
             <progress value="75" min="0" max="100" style="visibility:hidden;height:0;width:0;">75%</progress>
             <div id="stat">75%</div>
-        </div>
+        </div> -->
         
     </div>
     
