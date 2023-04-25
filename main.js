@@ -9,7 +9,7 @@ heatmap=document.querySelector("#heatmap")
 document.querySelector("#B1").addEventListener("click",function(){
 	console.log('Something changed!')
 	if(heatmap.style.display=="none"){
-		heatmap.style.display="block"
+		heatmap.style.display="flex"
 	}
 	else{heatmap.style.display="none"}
 })
