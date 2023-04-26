@@ -71,7 +71,7 @@ demoJson={
         selectDay.addEventListener('change', updateProgressBar);
         selectTime.addEventListener('change', updateProgressBar);
 
-        // add event listeners to the elevator buttons to update the percentage value
+        // added event listeners to the elevator buttons to update the percentage value
         L1Button.addEventListener('click', () => {
           elevator = 'L1';
           updateProgressBar();
