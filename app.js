@@ -7,10 +7,10 @@ var distanceService;
 
 function initializeMap(){
   var myLatLng = {
-    lat : 44.500000, lng : -89.500000 };
+    lat : 40.730610, lng : -73.935242 };
   var mapOptions = {
     center : myLatLng ,
-    zoom : 7,
+    zoom : 12,
     mapTypeId :  google.maps.MapTypeId.ROADMAP
   };
   map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
@@ -84,9 +84,11 @@ var additionalDistanceText = formatDistance(additionalDistance);
 
               var output = document.getElementById("output");
 
-              output.innerHTML = "<div class = 'alert-info'>Travel mode:" + modeText + "<br />From: " + origin + ".<br />To: " + destination + ".<br />Distance: " + distance + ".<br />Duration: " + duration + ".<br />Additional Time: " + additionalTime + "minutes.<br />Additional Distance: " + additionalDistanceText + ".<br />Additional Duration: " + additionalDurationText + ".</div>";
+            //   output.innerHTML = "<div class = 'alert-info'>Travel mode:" + modeText + "<br />From: " + origin + ".<br />To: " + destination + ".<br />Distance: " + distance + ".<br />Duration: " + duration + ".<br />Additional Time: " + additionalTime + "minutes.<br />Additional Distance: " + additionalDistanceText + ".<br />Additional Duration: " + additionalDurationText + ".</div>";
 
-              output.innerHTML = "<div class='alert-info'>Travel Mode: " + modeText + "<br />From: " + origin + ".<br />To: " + destination + ".<br />Distance: " + distance + ".<br />Duration: " + duration + ".</div>";
+            output.innerHTML = "<div class = 'alert-info-js'> <span class = 'mode-js'>Travel mode:" + modeText + "</span><br /><span class = 'time-js'>Additional Time: " + additionalTime + "minutes</span><br /><span class = 'duration-js'>Additional Duration: " + additionalDurationText + "</span></div>";
+
+            //   output.innerHTML = "<div class='alert-info'>Travel Mode: " + modeText + "<br />From: " + origin + ".<br />To: " + destination + ".<br />Distance: " + distance + ".<br />Duration: " + duration + ".</div>";
           } else {
               displayErrorMessage();
           }
@@ -109,8 +111,21 @@ function formatDuration(duration){
         durationText += minutes + "m";
     }
 
-    durationText =durationText.trim();
+    durationText = durationText.trim();
     return durationText;
+}
+ 
+function formatDistance(distance){
+var kilometers = Math.floor(distance / 1000);
+var meters = distance % 1000;
+var distanceText = "";
+if (kilometers > 0){
+    distanceText += kilometers + "km";
+} 
+if (meters > 0) {
+distanceText += meters + "m";
+}
+return distanceText;
 }
 
   function displayErrorMessage() {
@@ -132,4 +147,3 @@ var autocomplete1 = new google.maps.places.Autocomplete(input1, options);
 
 var input2 = document.getElementById("to");
 var autocomplete2 = new google.maps.places.Autocomplete(input2, options);
-
