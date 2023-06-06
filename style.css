@@ -9,7 +9,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: var(--purple);
+    /* background-color: var(--purple); */
 	font-family: 'Inter', sans-serif;
 
 }
@@ -50,8 +50,8 @@ select {
     width: 16rem;
     height: 3.4rem;
     border-radius: 0.5rem;
-    border: 1px solid var(--purple);
-    background-color: var(--pastel-purple);
+    /* border: 1px solid var(--purple); */
+    /* background-color: var(--pastel-purple); */
     padding-left: 6px;
 }
 .grid-wrapper{
@@ -113,9 +113,121 @@ border: 2px solid var(--dark-purple)!important;
 /* GOOGLE MAPS STYLING */
 
 #googleMap{
-	width: 80%;
+	width: 88%;
 	height: 400px;
 	margin: 10px auto;
+	border-radius: 0.5rem;
+}
+.google-map-actual{
+	margin:  2rem 0;
+}
+.google-maps-sec{
+	margin-left: 1rem;
+	margin-right: 1rem;
+	margin-top: 1.5rem;
+}
+.google-maps-sec .form-group{
+	display: flex;
+}
+.google-maps-sec .title{
+	display: flex;
+	align-items: center;
+	margin-left: 1rem;
+}
+.google-maps-sec .title .one{
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	border: 3px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 800;
+    margin-right: 1rem;
+}
+.google-maps-sec .form-1 input{
+width: 16rem;
+height: 2rem;
+margin-top: 0.7rem;
+border-radius: 1.5rem;
+border: 1px solid black;
+padding-left: 3rem;
+}
+.google-maps-sec .form-1 .origin-input{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.google-maps-sec .form-1 .destination-input{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.google-maps-sec .form-1 label{
+	margin-right: 0.7rem;
+}
+.google-maps-sec .form-2{
+	display: flex;
+	justify-content: center;
+}
+.google-maps-sec .form-2 select{
+	border-radius: 1.5rem;
+	height: 2rem;
+	margin-top: 0.7rem;
+	border-radius: 2.5rem;
+	border: 1px solid black;
+	margin: 0 auto;
+	width: 9.2rem;
+	margin-top: 0.7rem;
+	padding: 0.2rem!important;
+}
+.google-maps-sec .form-2 option{
+	/* padding-right: 0.3rem; */
+}
+.google-maps-sec .form-2 .mode-input{
+	/* margin-left: 1rem; */
+}
+.google-maps-sec .form-2 .stops-input{
+	margin-left: 0.8rem;
+
+}
+.google-maps-sec .btn-info{
+    width: 18.8rem;
+    height: 2.3rem;
+	border-radius: 1.5rem;
+	border: 1px solid black!important;
+	padding-left: 0.5rem;
+	
+}
+.origin-input{
+	position: relative;
+}
+.origin-input label{
+	position: absolute;
+	top: 1.2rem;
+	left: 1.9rem;
+}
+.destination-input{
+	position: relative;
+}
+.destination-input label{
+	position: absolute;
+	top: 1.2rem;
+	left: 1.9rem;
+}
+.map-btn{
+display: flex;
+	justify-content: center;	
+}
+.alert-info-js{
+	width: 17rem;
+    /* height: 2rem; */
+    border-radius: 0.8rem;
+    border: 1px solid black;
+    padding: 1rem;
+    margin-top: 0.7rem;
+    margin: 0 auto;
+    margin-top: 0.7rem;
 }
 
   @media only screen and (max-width: 1100px) {
