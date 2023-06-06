@@ -102,89 +102,89 @@ demoJson={
 
       // GOOGLE MAPS JS
 
-      var map;
-      var directionsService;
-      var directionsDisplay;
-      var distanceService;
+//       var map;
+//       var directionsService;
+//       var directionsDisplay;
+//       var distanceService;
       
-      function initializeMap(){
-        var myLatLng = {
-          lat : 44.500000, lng : -89.500000 };
-        var mapOptions = {
-          center : myLatLng ,
-          zoom : 7,
-          mapTypeId :  google.maps.MapTypeId.ROADMAP
-        };
-        map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
-            directionsService = new google.maps.DirectionsService();
-            directionsDisplay = new google.maps.DirectionsRenderer();
-            directionsDisplay.setMap(map);
-            distanceService = new google.maps.DistanceMatrixService();
-        }
+//       function initializeMap(){
+//         var myLatLng = {
+//           lat : 44.500000, lng : -89.500000 };
+//         var mapOptions = {
+//           center : myLatLng ,
+//           zoom : 7,
+//           mapTypeId :  google.maps.MapTypeId.ROADMAP
+//         };
+//         map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
+//             directionsService = new google.maps.DirectionsService();
+//             directionsDisplay = new google.maps.DirectionsRenderer();
+//             directionsDisplay.setMap(map);
+//             distanceService = new google.maps.DistanceMatrixService();
+//         }
 
-        function calcRoute() {
-            var origin = document.getElementById("from").value;
-            var destination = document.getElementById("to").value;
-            var selectedMode = document.getElementById("mode").value;
+//         function calcRoute() {
+//             var origin = document.getElementById("from").value;
+//             var destination = document.getElementById("to").value;
+//             var selectedMode = document.getElementById("mode").value;
 
-            var request = {
-                origin: origin,
-                destination: destination,
-                travelMode: google.maps.TravelMode[selectedMode]
-            };
+//             var request = {
+//                 origin: origin,
+//                 destination: destination,
+//                 travelMode: google.maps.TravelMode[selectedMode]
+//             };
 
-            directionsService.route(request, function (result, status) {
-                if (status == google.maps.DirectionsStatus.OK) {
-                    directionsDisplay.setDirections(result);
-                    getDistanceMatrix(origin, destination, selectedMode);
-                } else {
-                    directionsDisplay.setDirections({ routes: [] });
-                    map.setCenter(myLatLng);
-                    displayErrorMessage();
-                }
-            });
-        }
+//             directionsService.route(request, function (result, status) {
+//                 if (status == google.maps.DirectionsStatus.OK) {
+//                     directionsDisplay.setDirections(result);
+//                     getDistanceMatrix(origin, destination, selectedMode);
+//                 } else {
+//                     directionsDisplay.setDirections({ routes: [] });
+//                     map.setCenter(myLatLng);
+//                     displayErrorMessage();
+//                 }
+//             });
+//         }
 
-        function getDistanceMatrix(origin, destination, selectedMode) {
-            var mode = selectedMode.toLowerCase();
-            var options = {
-                origins: [origin],
-                destinations: [destination],
-                travelMode: google.maps.TravelMode[selectedMode]
-            };
+//         function getDistanceMatrix(origin, destination, selectedMode) {
+//             var mode = selectedMode.toLowerCase();
+//             var options = {
+//                 origins: [origin],
+//                 destinations: [destination],
+//                 travelMode: google.maps.TravelMode[selectedMode]
+//             };
 
-            distanceService.getDistanceMatrix(options, function (result, status) {
-                if (status === 'OK' && result.rows.length > 0 && result.rows[0].elements.length > 0) {
-                    var distance = result.rows[0].elements[0].distance.text;
-                    var duration = result.rows[0].elements[0].duration.text;
+//             distanceService.getDistanceMatrix(options, function (result, status) {
+//                 if (status === 'OK' && result.rows.length > 0 && result.rows[0].elements.length > 0) {
+//                     var distance = result.rows[0].elements[0].distance.text;
+//                     var duration = result.rows[0].elements[0].duration.text;
 
-                    var modeText = mode.charAt(0).toUpperCase() + mode.slice(1);
+//                     var modeText = mode.charAt(0).toUpperCase() + mode.slice(1);
 
-                    var output = document.getElementById("output");
-                    output.innerHTML = "<div class='alert-info'>Travel Mode: " + modeText + "<br />From: " + origin + ".<br />To: " + destination + ".<br />Distance: " + distance + ".<br />Duration: " + duration + ".</div>";
-                } else {
-                    displayErrorMessage();
-                }
-            });
-        }
+//                     var output = document.getElementById("output");
+//                     output.innerHTML = "<div class='alert-info'>Travel Mode: " + modeText + "<br />From: " + origin + ".<br />To: " + destination + ".<br />Distance: " + distance + ".<br />Duration: " + duration + ".</div>";
+//                 } else {
+//                     displayErrorMessage();
+//                 }
+//             });
+//         }
 
-        function displayErrorMessage() {
-            var output = document.getElementById("output");
-            output.innerHTML = "<div class='alert-danger'>Could not retrieve distance. Please try again.</div>";
-        }
+//         function displayErrorMessage() {
+//             var output = document.getElementById("output");
+//             output.innerHTML = "<div class='alert-danger'>Could not retrieve distance. Please try again.</div>";
+//         }
 
-        initializeMap();
+//         initializeMap();
 
 
-//Autocomplete objects for all inputs
+// //Autocomplete objects for all inputs
 
-var options = {
-  types: ['(cities)']
-}
+// var options = {
+//   types: ['(cities)']
+// }
 
-var input1 = document.getElementById("from");
-var autocomplete1 = new google.maps.places.Autocomplete(input1, options);
+// var input1 = document.getElementById("from");
+// var autocomplete1 = new google.maps.places.Autocomplete(input1, options);
 
-var input2 = document.getElementById("to");
-var autocomplete2 = new google.maps.places.Autocomplete(input2, options);
+// var input2 = document.getElementById("to");
+// var autocomplete2 = new google.maps.places.Autocomplete(input2, options);
  
