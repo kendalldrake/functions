@@ -80,14 +80,40 @@ var additionalDistance = result.rows[0].elements[0].distance.value;
 var additionalDurationText = formatDuration(additionalDuration);
 var additionalDistanceText = formatDistance(additionalDistance);
 
-              var modeText = mode.charAt(0).toUpperCase() + mode.slice(1);
+            var modeText = "";
+            var modeIcon = "";
+
+            switch (selectedMode) {
+                case "DRIVING" :
+                    modeText = "Driving";
+                    modeIcon = "<i class='fas fa-car'></i>";
+                    break;
+
+                    case "WALKING" :
+                        modeText = "By Foot";
+                        modeIcon = "<i class='fas fa-person-walking'></i>";
+                        break;
+
+                        case "TRANSIT" :
+                            modeText = "By Train";
+                            modeIcon = "<i class='fas fa-train-subway'></i>";
+                            break;
+
+                            case "BICYCLING" :
+                                modeText = "By Bicycle";
+                                modeIcon = "<i class='fas fa-person-biking'></i>";
+                                break;
+                                default :
+                                modeText = "";
+                                modeIcon = "";
+            }
+
 
               var output = document.getElementById("output");
 
             //   output.innerHTML = "<div class = 'alert-info'>Travel mode:" + modeText + "<br />From: " + origin + ".<br />To: " + destination + ".<br />Distance: " + distance + ".<br />Duration: " + duration + ".<br />Additional Time: " + additionalTime + "minutes.<br />Additional Distance: " + additionalDistanceText + ".<br />Additional Duration: " + additionalDurationText + ".</div>";
-
-            output.innerHTML = "<div class = 'alert-info-js'> <span class = 'mode-js'>Travel mode:" + modeText + "</span><br /><span class = 'time-js'>Additional Time: " + additionalTime + "minutes</span><br /><span class = 'duration-js'>Additional Duration: " + additionalDurationText + "</span></div>";
-
+''
+            output.innerHTML = "<div class = 'alert-info-js'>Parsons <span class= 'add-time-js'>" + additionalTime + "mins</span><span class = 'mode-js'>" + modeIcon + "</span><span class = 'time-js'> " + additionalDurationText + "</span><span class = 'duration-js'> " + additionalDistanceText + "</span></div>";
             //   output.innerHTML = "<div class='alert-info'>Travel Mode: " + modeText + "<br />From: " + origin + ".<br />To: " + destination + ".<br />Distance: " + distance + ".<br />Duration: " + duration + ".</div>";
           } else {
               displayErrorMessage();
