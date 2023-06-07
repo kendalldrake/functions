@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/ab2155e76b.js" 
-    crossorigin="anonymous"></script>
-    <!-- fontawesome icons -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
 </head>
 <body>
     <!-- GOOGLE MAPS INPUT 1 -->
+    <div class="google-map-sec-wrapper">
     <div class="google-maps-sec ">
         <div class="title">
             <div class="one"> <h4>1</h4></div>
@@ -41,7 +41,7 @@
                 <option value="DRIVING">By Car</option>
                 <option value="WALKING">By Foot</option>
                 <option value="BICYCLING">By Bicycle</option>
-                <option value="TRAIN">By Train</option>
+                <option value="TRANSIT">By Train</option>
             </select>
             </div>
 <!-- ADDITIONAL STOPS INPUT -->
@@ -56,14 +56,19 @@
             </div>
             </div>
         </form>
+        <!-- <div class="map-btn .map-btn-top">
+            <button class="btn btn-info" onclick="calcRoute();"> Search</button>
+        </div> -->
         <div>
             <!-- <button class="btn btn-info" onclick="calcRoute();">Search</button> -->
         </div>
         <div>
             <div class="google-map-actual"><div id="googleMap"></div></div>
-            <div class="map-btn"><button class="btn btn-info" onclick="calcRoute();">Search</button></div>
-            <div id="output"></div>
+            <a href="index.html"><div id="output"></div></a>
+            <div class="map-btn "><button class="btn btn-info" onclick="calcRoute();">Search</button></div>
+            <!-- <div id="output"></div> -->
         </div>
+    </div>
     </div>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBm9bcNlzShlTyi64H8k27-eW3jv6LF4s&libraries=places"></script>
     <!-- <script src="main.js"></script> -->
