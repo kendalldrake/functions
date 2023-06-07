@@ -9,63 +9,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <script src="https://kit.fontawesome.com/ab2155e76b.js" crossorigin="anonymous"></script> -->
 </head>
 <body>
     <div class="main">
-<main>
-    <h1>Input Your Expected Arrival Time</h1>
-    <p>Parsons School of Design, 2 W 13th ST, 10011</p>
-
- <!-- GOOGLE MAPS INPUT 1 -->
-    <!-- <div class="google-maps-sec">
-        <form>
-            <div class="form-group">
-                <label for="from"><i class="far fa-dot-circle"></i></label>
-                <div>
-                    <input type="text" id="from" placeholder="Origin" class="form-control">
-                </div>
-            </div> -->
-<!-- GOOGLE MAPS INPUT 2 -->
-            <!-- <div class="form-group">
-                <label for="to"><i class="fas fa-map-marker-alt"></i></label>
-                <div>
-                    <input type="text" id="to" placeholder="Destination" class="form-control">
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="mode" class="form-control"></label>
-                <select name="" id="mode" class="form-control"></select>
-                <option value="DRIVING">DRIVING</option>
-                <option value="WALKING">WALKING</option>
-                <option value="BICYCLING">BICYCLING</option>
-                <option value="TRAIN">TRAIN</option>
-
-            </div>
-        </form>
-        <div>
-            <button class="btn btn-info" onclick="calcRoute();"><i class="fas fa-map-signs"></i></button>
+<main class="elevator-sec">
+    <div class ="elevator-sec">
+        <div class="title">
+            <div class="one"> <h4>1</h4></div>
+            <h3>Calculate Your Route</h3>
         </div>
-        <div>
-            <div id="googleMap"></div>
-            <div id="output"></div>
-        </div>
-    </div> -->
     <div class="timeinput">
-        <!-- <label for="select-day">Select Day:</label> -->
+        <form >
+<div class="form-1">
+<label for="select-day"><i class="fa-regular fa-calendar"></i></label>
     <select id="select-day">
     </select>
-    <!-- <label for="select-time">Select Time:</label> -->
+ </div>
+ <div class="form-2">
+    <label for="select-time"><i class="fa-regular fa-clock"></i></label>
     <select id="select-time">
     </select>
+    </div>
+    </form>
     </div>
     <br>
  <div class="grid-wrapper">
     <div class="buttoncontainer grid-container">
-        <div class="elevator"><button id="L1"><img src="./L1.png" alt="Elevator L1"></button><h5>Elevator L1 (Red Cage)</h5></div>
-        <div class="elevator"><button id="B1"><img src="./B1.png" alt="Elevator B1"></button><h5>Elevator B1 (Opposite Lockers in the Lobby)</h5></div>
-        <div class="elevator"><button id="B2"><img src="./B2.png" alt="Elevator B2"></button><h5>Elevator B2 (Opposite Lockers in the Lobby)</h5></div>
-        <div class="elevator"><button id="A1"><img src="./A1.png" alt="Elevator A1"></button><h5>Elevator A1 (Past the Gallery)</h5></div>
+        <div class="elevator elevator1"><button id="L1"><img src="./L1.png" alt="Elevator L1"></button><h5>Elevator L1 (Red Cage)</h5></div>
+        <div class="elevator elevator2"><button id="B1"><img src="./B1.png" alt="Elevator B1"></button><h5>Elevator B1 (Opposite Lockers in the Lobby)</h5></div>
+        <div class="elevator elevator3"><button id="B2"><img src="./B2.png" alt="Elevator B2"></button><h5>Elevator B2 (Opposite Lockers in the Lobby)</h5></div>
+        <div class="elevator elevator4"><button id="A1"><img src="./A1.png" alt="Elevator A1"></button><h5>Elevator A1 (Past the Gallery)</h5></div>
     </div>
  </div>
     <div class="progress-container">
