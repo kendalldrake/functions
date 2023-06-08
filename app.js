@@ -113,7 +113,7 @@ var additionalDistanceText = formatDistance(additionalDistance);
 
             //   output.innerHTML = "<div class = 'alert-info'>Travel mode:" + modeText + "<br />From: " + origin + ".<br />To: " + destination + ".<br />Distance: " + distance + ".<br />Duration: " + duration + ".<br />Additional Time: " + additionalTime + "minutes.<br />Additional Distance: " + additionalDistanceText + ".<br />Additional Duration: " + additionalDurationText + ".</div>";
 ''
-            output.innerHTML = "<div class = 'alert-info-js'>Parsons <span class= 'add-time-js'>" + additionalTime + "mins</span><span class = 'mode-js'>" + modeIcon + "</span><span class = 'time-js'> " + additionalDurationText + "</span><span class = 'duration-js'> " + additionalDistanceText + "</span></div>";
+            output.innerHTML = "<div class = 'alert-info-js'>Parsons <span class= 'add-time-js'> +" + additionalTime + "mins</span><span class = 'mode-js'>" + modeIcon + "</span><span class = 'time-js'> " + additionalDurationText + "</span><span class = 'duration-js'> " + additionalDistanceText + "</span><span class = 'next-page-js'><i class='fa-solid fa-circle-arrow-right'></i></span></div>";
             //   output.innerHTML = "<div class='alert-info'>Travel Mode: " + modeText + "<br />From: " + origin + ".<br />To: " + destination + ".<br />Distance: " + distance + ".<br />Duration: " + duration + ".</div>";
           } else {
               displayErrorMessage();
@@ -134,7 +134,7 @@ function formatDuration(duration){
         durationText += hours + "h" ;
     }
     if(minutes > 0){
-        durationText += minutes + "m";
+        durationText += minutes + "mins";
     }
 
     durationText = durationText.trim();
@@ -148,9 +148,9 @@ var distanceText = "";
 if (kilometers > 0){
     distanceText += kilometers + "km";
 } 
-if (meters > 0) {
-distanceText += meters + "m";
-}
+// if (meters > 0) {
+// distanceText += meters + "m";
+// }
 return distanceText;
 }
 
