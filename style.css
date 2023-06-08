@@ -10,11 +10,10 @@ body{
     margin: 0;
     padding: 0;
     background-color: var(--tinted-blue);
-	font-family: 'Inter', sans-serif;
+	font-family: 'Inter', sans-serif !important;
 
 }
 main{
-    background-color: white;
     width: 88%;
     margin-top: 5%;
     border-radius: 2rem 2rem 0 0;
@@ -52,28 +51,39 @@ P{  font-weight: 200;
 	display: flex;
 	align-items: center;
 	margin-left: 1rem;
+	margin-top: 1.5rem;
 }
 .elevator-sec .title .one{
 	width: 2rem;
 	height: 2rem;
 	border-radius: 50%;
-	border: 3px solid black;
+	border: 3px solid var(--neon-green);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-weight: 800;
     margin-right: 1rem;
 }
+.timeinput {
+display: flex;
+justify-content: center !important;
+width: 350px;
+}
+.timeinput label{
+	color: var(--blue) ;
+}
 .timeinput select {
-	width: 16rem;
-	height: 2rem;
+	width: 19rem;
+	height: 2.3rem;
 	margin-top: 0.7rem;
 	border-radius: 1.5rem;
-	border: 1px solid var(--neon-green);
+	border: 2px solid var(--neon-green);
 	padding-left: 3rem;
+	margin-bottom: 1rem;
+	box-shadow: 2px 2px 27px -15px;
 }
-.timeinput select:select, .timeinput select:hover{
-	border: 1px solid var(--neon-green)!important;
+.timeinput select:focus, .timeinput select:hover{
+	border: 2px solid var(--neon-green)!important;
 }
 
 .timeinput .form-1{
@@ -81,16 +91,16 @@ P{  font-weight: 200;
 }
 .timeinput .form-1 label{
 	position: absolute;
-	left: 1rem;
-	top: 1rem;
+	left: 1.2rem;
+	top: 1.2rem;
 }
 .timeinput .form-2{
 	position: relative;
 }
 .timeinput .form-2 label{
 	position: absolute;
-	left: 1rem;
-	top: 1rem;
+	left: 1.2rem;
+	top: 1.2rem;
 }
 .grid-wrapper{
     margin-top: 3rem;
@@ -99,14 +109,15 @@ P{  font-weight: 200;
     margin-bottom: 2rem;
   }
   .grid-wrapper .elevator{
-    width: 14rem;
-    height: 14rem;
+    width: 10rem;
+    height: 10rem;
     margin-bottom: 5rem;
     /* background-color: var(--grey); */
  	border-radius: 1rem;
   }
   h5{
     font-weight: 400!important;
+	text-align: center;
   }
   button{
     border:none!important;
@@ -120,8 +131,9 @@ P{  font-weight: 200;
    border-radius: 1rem;
   }
   .grid-wrapper .elevator{
-    border: 1px solid var(--neon-green)!important;
+    border: 2px solid var(--neon-green)!important;
     transition: all ease 0.1s;
+
   }
   .grid-wrapper .elevator:hover{
 	border: 2px solid var(--blue)!important;
@@ -157,16 +169,16 @@ margin: auto;
 }
 .progress-circle{
 	transform: rotate(0deg);
-	margin-top: 4rem;
+	margin-top: 4px;
 }
-.progress-circle.back{
+.progress-circle-back{
 	fill: none;
 	stroke: var(--grey);
 	stroke-width: 10px;
 }
 .progress-circle-prog{
 	fill: none;
-	stroke: var(--neon-green);
+	stroke: var(--neon-green) !important;
 	stroke-width: 10px;
 	stroke-dasharray: 0 999;
 	stroke-dashoffset:  0px;
@@ -181,6 +193,61 @@ margin: auto;
 }
 .elevator{
 	display: none;
+}
+.go-back{
+	margin-left: 1.4rem;
+padding-top: 1rem!important;
+}
+.elevator-sec .subtitle{
+text-align: left;
+font-size: 14px;
+margin-left: 1.6rem;
+font-weight:400;
+margin-right: 0.7rem;
+}
+.elevator-sec .elevator-directions{
+	/* border: 2px solid var(--neon-green); */
+	padding: 0.6rem;
+	border-radius: 1rem;
+	width: 17rem;
+	margin: 0 auto;
+	background-color: white;
+	box-shadow: 2px 2px 27px -15px;
+}
+.elevator-sec .elevator-directions p{
+	font-size: 14px;
+	font-weight: 400;
+	text-align: left;
+	padding: 0 !important;
+	margin: 0!important;
+	margin-bottom: 0.4rem !important;
+}
+.elevator-sec .elevator-directions h4{
+	padding: 0!important;
+	margin: 0 !important;
+	padding-left: 0.8rem !important;
+}
+.elevator-sec .elevator-directions .icon-div{
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.4rem;
+	margin-top: 0.4rem;
+}
+.elevator-sec .elevator-directions .icon-div i{
+	color: var(--blue);
+}
+.elevator-sec .end-button{
+	display: flex;
+	justify-content: center;
+	margin-top: 1.5rem;
+}
+.elevator-sec .end-button button{
+	background-color: var(--neon-green) !important;
+	color: white;
+	border-radius: 1.5rem;
+	width: 19rem;
+	height: 2.3rem;
+	margin: 0 auto;
 }
 /* GOOGLE MAPS STYLING */
 
@@ -462,6 +529,45 @@ font-size: 1.5rem;
 	}
 	.google-maps-sec form{
 		margin-left: 4.3rem;
+	}
+	.elevator-progress{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.elevator-sec form{
+		display: flex!important;
+		margin-left: 21rem;
+	}
+	.elevator-sec{
+		position: relative;
+		margin-left: 2rem;
+	}
+	.elevator-sec .end-button{
+		position: absolute;
+		top: 2rem;
+		right: 7rem;
+		top: 7.5rem;
+	}
+	.progress{
+		margin: 8rem;
+	}
+	.elevator-sec .elevator-directions{
+		width: 58rem;
+		padding: 2.6rem;
+	}
+	.elevator-sec .elevator-directions h4{
+		font-size: 1.4rem;
+	}
+	.elevator-sec .elevator-directions p{
+		margin-top: 1rem !important;
+	}
+	.elevator-sec .elevator-directions .icon-div i{
+		font-size: 24px;
+	}
+	.main{
+		width: 1280px;
+		margin: 0 auto;
 	}
   }
 
