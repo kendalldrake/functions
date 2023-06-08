@@ -95,22 +95,38 @@ demoJson={
       
 // DYNAMIC PROGRESS BAR
 
-function render_progress_bar(progressVal){
-  let strokeVal = ( 4.64 * 100 ) / 100 ;
+function render_progress_bar(progressVal) {
+  let strokeVal = (4.64 * 100) / 100;
   let x = document.querySelector('.progress-circle-prog');
-  x.style.strkeDasharray = progressVal * strokeVal + ' 999 ';
+  x.style.strokeDasharray = progressVal * strokeVal + ' 999';
   let el = document.querySelector('.progress-text');
   let from = el.dataset.progress;
   el.dataset.progress = progressVal;
   let start = new Date().getTime();
 
   setTimeout(function () {
-    let now = new Date().getTime() - start ;
-    let progress  = now / 700;
-    el.innerHTML = progressVal + '%' ;
-    if (progress < 1) setTimeout(arguments.callee, 10);
+      let now = new Date().getTime() - start;
+      let progress = now / 700;
+      el.innerHTML = progressVal + '%';
+      if (progress < 1) setTimeout(arguments.callee, 10);
   }, 10);
 }
+// function render_progress_bar(progressVal){
+//   let strokeVal = ( 4.64 * 100 ) / 100 ;
+//   let x = document.querySelector('.progress-circle-prog');
+//   x.style.strkeDasharray = progressVal * strokeVal + ' 999 ';
+//   let el = document.querySelector('.progress-text');
+//   let from = el.dataset.progress;
+//   el.dataset.progress = progressVal;
+//   let start = new Date().getTime();
+
+//   setTimeout(function () {
+//     let now = new Date().getTime() - start ;
+//     let progress  = now / 700;
+//     el.innerHTML = progressVal + '%' ;
+//     if (progress < 1) setTimeout(arguments.callee, 10);
+//   }, 10);
+// }
 
 //FIND LEAST ELEVATOR
 
