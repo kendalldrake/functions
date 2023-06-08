@@ -16,12 +16,13 @@
     <div class="main">
 <main class="elevator-sec">
     <div class ="elevator-sec">
+        <div class="go-back"><a href="maps.html" ><i class="fa-solid fa-angle-left"></i></a></div>
         <div class="title">
-            <div class="one"> <h4>1</h4></div>
-            <h3>Calculate Your Route</h3>
+            <div class="one"> <h4>2</h4></div>
+            <h3>Determine Your Elevator</h3>
         </div>
     <div class="timeinput">
-        <form >
+        <form>
 <div class="form-1">
 <label for="select-day"><i class="fa-regular fa-calendar"></i></label>
     <select id="select-day">
@@ -35,7 +36,9 @@
     </form>
     </div>
     <br>
- <div class="grid-wrapper">
+    <p class="subtitle">Based on your selections, the best elevator to take is:</p>
+ <div class="elevator-progress">
+    <div class="grid-wrapper">
     <div class="buttoncontainer grid-container">
         <div class="elevator" data-id="L1"><button id="L1"><img src="./L1.png" alt="Elevator L1"></button><h5>Elevator L1 (Red Cage)</h5></div>
         <div class="elevator" data-id="B1"><button id="B1"><img src="./B1.png" alt="Elevator B1"></button><h5>Elevator B1 (Opposite Lockers in the Lobby)</h5></div>
@@ -50,12 +53,21 @@
     <path class="progress-circle-prog" d = "M6,80 a74,74 0 0,1 148,0"></path>
        </svg>
 
-       
-
        <div class="progress-text" id="percentage" data-progress="90">0%</div>
       </div>
+      </div>
+      <div class="elevator-directions">
+        <div class="icon-div">
+            <i class="fa-solid fa-location-arrow"></i>
+            <h4>Directions</h4>
+        </div>
+      <!-- <h4>Directions</h4> -->
+      <p>Enter Parsons School of Design on 2W 13th Street, turn right and the elevators will be on your right and left-hand sides.</p>
+      </div>
 
-
+    <div class="end-button">
+        <a href=""><button>Start Journey</button></a>
+    </div>
     <!-- <div id="heatmap">
         <progress value="75" min="0" max="100" style="visibility:hidden;height:0;width:0;">75%</progress>
         <div id="stat">75%</div>
