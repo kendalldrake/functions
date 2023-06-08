@@ -57,49 +57,75 @@ demoJson={
           selectTime.add(option);
         }
 
+        selectDay.addEventListener('change' , () => {
+          var leastElevator = getElevatorWithLeastPercentage(data, selectDay.value, selectTime.value);
+          L1Button.parentElement.style.display = "none";
+          B1Button.parentElement.style.display = "none";
+          B2Button.parentElement.style.display = "none";
+          A1Button.parentElement.style.display = "none";
+          document.querySelector(`[data-id = "${leastElevator}"]`).style.display = "block";
+          document.querySelector('.grid-container').style.gridTemplateColumns = 'repeat(1. 1fr)';
+          updateProgressBar();
+        });
+
+        selectTime.addEventListener('change' , () => {
+          var leastElevator = getElevatorWithLeastPercentage(data, selectDay.value , selectTime.value);
+          L1Button.parentElement.style.display = "none";
+          B1Button.parentElement.style.display = "none";
+          B2Button.parentElement.style.display = "none";
+          A1Button.parentElement.style.display = "none";
+          document.querySelector(`[data-id = "${leastElevator}"]`).style.display = "block";
+          document.querySelector('.grid-container').style.gridTemplateColumns = 'repeat(1, 1fr)';
+          updateProgressBar(leastElevator);
+        })
+
         // update the progress bar when a new day or time is selected
-        function updateProgressBar() {
+        function updateProgressBar(elevator) {
           const day = selectDay.value;
           const time = selectTime.value;
           const count = data[elevator][day][time].count;
           const percentageValue = data[elevator][day][time].percentage;
 
           percentage.textContent = percentageValue + "";
-          progressBar.style.width = percentageValue + "";
+          render_progress_bar(parseInt(percentageValue));
         }
 
-        selectDay.addEventListener('change', updateProgressBar);
-        selectTime.addEventListener('change', updateProgressBar);
-
-        // added event listeners to the elevator buttons to update the percentage value
-        L1Button.addEventListener('click', () => {
-          elevator = 'L1';
-          updateProgressBar();
-        });
-
-        B1Button.addEventListener('click', () => {
-          elevator = 'B1';
-          updateProgressBar();
-        });
-
-        B2Button.addEventListener('click', () => {
-          elevator = 'B2';
-          updateProgressBar();
-        });
-
-        A1Button.addEventListener('click', () => {
-          elevator = 'A1';
-          updateProgressBar();
-        });
-
-        // initialize the progress bar with the default values
-        // let elevator = 'L1';
-        // updateProgressBar();
-        
       })
       .catch(error => console.error(error));
       
+// DYNAMIC PROGRESS BAR
 
+function render_progress_bar(progressVal){
+  let strokeVal = ( 4.64 * 100 ) / 100 ;
+  let x = document.querySelector('.progress-circle-prog');
+  x.style.strkeDasharray = progressVal * strokeVal + ' 999 ';
+  let el = document.querySelector('.progress-text');
+  let from = el.dataset.progress;
+  el.dataset.progress = progressVal;
+  let start = new Date().getTime();
+
+  setTimeout(function () {
+    let now = new Date().getTime() - start ;
+    let progress  = now / 700;
+    el.innerHTML = progressVal + '%' ;
+    if (progress < 1) setTimeout(arguments.callee, 10);
+  }, 10);
+}
+
+//FIND LEAST ELEVATOR
+
+function getElevatorWithLeastPercentage(data, day , time){
+  let leastPercentage = Infinity;
+  let leastElevator = "";
+  for (const elevator in data ) {
+    const percentage = parseFloat(data[elevator][day][time].percentage.replace('%' , ''));
+    if(percentage < leastPercentage){
+      leastPercentage = percentage;
+      leastElevator = elevator;
+    }
+  }
+  return leastElevator;
+}
       // GOOGLE MAPS JS
 
 //       var map;
