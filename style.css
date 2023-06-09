@@ -422,6 +422,10 @@ padding-left: 3rem;
 	display: flex;
 	justify-content: center;
 }
+input:focus-visible , input:hover , input:focus , select:hover, select:focus select:focus-visible{
+	border: 2px solid var(--blue) !important;
+	outline: var(--blue);
+}
 .google-maps-sec .form-2 select{
 	border-radius: 1.5rem;
 	height: 2rem;
@@ -479,7 +483,7 @@ padding-left: 3rem;
 	/* background-color:var(--neon-green)!important; */
 	border: none !important;
 	color: var(--blue);
-	border: 2px solid var(--blue);
+	border: 2px solid var(--blue)!important;
 	background-color: #f2f2f2 !important;
 	box-shadow:  -7px -7px 20px #fff9,
 	-4px -4px 5px 0px #fff9,
@@ -558,7 +562,229 @@ display: flex;
 	margin-right: 0.5rem;
 
 }
+/* feedback-page */
+#feedback-page .title{
+	display: flex;
+	align-items: center;
+	padding-left: 2rem;
+	margin-top: 3rem;
+}
+#feedback-page .title .three{
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 800;
+    margin-right: 1rem;
+	color: blue;
+	background-color: #f2f2f2 !important;
+	box-shadow:  -7px -7px 20px #fff9,
+	-4px -4px 5px 0px #fff9,
+	7px 7px 20px 0px #0001,
+	4px 4px 5px 0px #0001,
+	inset 0px 0px 0px 0px #fff9,
+	inset 0px 0px 0px 0px #0001,
+	inset 0px 0px 0px 0px #fff9,
+	inset 0px 0px 0px 0px #0001!important;
+}
+.feedback-wrapper{
+	
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.feedback-page{
+	
+	min-height: 380px;
+	box-shadow:  -7px -7px 20px #fff9,
+	-4px -4px 5px 0px #fff9,
+	7px 7px 20px 0px #0001,
+	4px 4px 5px 0px #0001,
+	inset 0px 0px 0px 0px #fff9,
+	inset 0px 0px 0px 0px #0001,
+	inset 0px 0px 0px 0px #fff9,
+	inset 0px 0px 0px 0px #0001 ;
+	width: 280px;
+	margin: 0 auto;
+	margin-top: 4rem;
+	padding: 1rem;
+	border-radius: 1rem;
 
+	text-align: center;
+	
+
+}
+.feedback-page .check-icon{
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	box-shadow:  -7px -7px 20px #fff9,
+	-4px -4px 5px 0px #fff9,
+	7px 7px 20px 0px #0001,
+	4px 4px 5px 0px #0001,
+	inset 0px 0px 0px 0px #fff9,
+	inset 0px 0px 0px 0px #0001,
+	inset 0px 0px 0px 0px #fff9,
+	inset 0px 0px 0px 0px #0001 ;
+	background-color: #f2f2f2;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 800;
+	margin: 0 auto;
+	margin-top: 1rem;
+	color: var(--blue);
+}
+.feedback-page p{
+	text-align: center;
+	margin-top: -0.5rem;	
+	font-size: 14px;
+
+}
+.feedback-page form{
+	position: relative;
+	margin-top: -0.5rem;
+	
+}
+.feedback-page h5{
+	margin: 0!important;
+	padding: 0 !important;
+	margin-top: 2rem !important;
+	font-weight: 700 !important;
+	text-align: left !important;
+	padding-left: 0.9rem !important;
+}
+.feedback-page form select{
+	width: 16rem;
+	border: none;
+	border-radius: 2.5rem;
+	height: 2.5rem;
+	padding-left: 2.3rem;
+	box-shadow:  -7px -7px 20px #fff9,
+	-4px -4px 5px 0px #fff9,
+	7px 7px 20px 0px #0001,
+	4px 4px 5px 0px #0001,
+	inset 0px 0px 0px 0px #fff9,
+	inset 0px 0px 0px 0px #0001,
+	inset 0px 0px 0px 0px #fff9,
+	inset 0px 0px 0px 0px #0001 ;
+	background-color: #f2f2f2;	
+}
+.feedback-page label {
+	position: absolute;
+	top: 1.7rem;
+	left: 1.7rem;
+	color: var(--blue);
+}
+.feedback-page .confirm-btn{
+	margin: 0 auto;
+}
+.feedback-page .confirm-btn button{
+	background-color: #c9d3dd !important;
+	box-shadow:  -7px -7px 20px #fff9,
+	-4px -4px 5px 0px #fff9,
+	7px 7px 20px 0px #0001,
+	4px 4px 5px 0px #0001,
+	inset 0px 0px 0px 0px #fff9,
+	inset 0px 0px 0px 0px #0001,
+	inset 0px 0px 0px 0px #fff9,
+	inset 0px 0px 0px 0px #0001 !important;	
+	width: 16rem;
+	border-radius: 2.5rem;
+	height: 2.5rem;
+	margin-top: 1rem;
+}
+.feedback-page .back-btn{
+	margin: 0 auto;
+}
+.feedback-page .back-btn button{
+	background-color: #f2f2f2;	
+	box-shadow:  -7px -7px 20px #fff9,
+	-4px -4px 5px 0px #fff9,
+	7px 7px 20px 0px #0001,
+	4px 4px 5px 0px #0001,
+	inset 0px 0px 0px 0px #fff9,
+	inset 0px 0px 0px 0px #0001,
+	inset 0px 0px 0px 0px #fff9,
+	inset 0px 0px 0px 0px #0001 !important;	
+	border-radius: 2.5rem;
+	width: 16rem;
+	height: 2.5rem;
+	margin-top: 1rem;
+}
+.feedback-page .back-btn button:hover, .feedback-page .back-btn button:focus , .feedback-page .confirm-btn button:hover, .feedback-page .confirm-btn button:focus , .feedback-page form select:hover , .feedback-page form select:focus{
+	border: 2px solid var(--blue) !important;
+}
+
+.confirmation-wrapper{
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+.confirmation-page{
+	width: 290px;
+	height: 300px;
+	background-color: #f2f2f2;
+	box-shadow:  -7px -7px 20px #fff9,
+	-4px -4px 5px 0px #fff9,
+	7px 7px 20px 0px #0001,
+	4px 4px 5px 0px #0001,
+	inset 0px 0px 0px 0px #fff9,
+	inset 0px 0px 0px 0px #0001,
+	inset 0px 0px 0px 0px #fff9,
+	inset 0px 0px 0px 0px #0001 ;
+	margin-top: 10rem;
+	text-align: center;
+	border-radius: 1rem;
+}
+.confirmation-page .check-icon{
+	width: 3rem;
+	height: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--blue);
+	background-color: #f2f2f2;
+	box-shadow:  -7px -7px 20px #fff9,
+	-4px -4px 5px 0px #fff9,
+	7px 7px 20px 0px #0001,
+	4px 4px 5px 0px #0001,
+	inset 0px 0px 0px 0px #fff9,
+	inset 0px 0px 0px 0px #0001,
+	inset 0px 0px 0px 0px #fff9,
+	inset 0px 0px 0px 0px #0001 ;
+	margin: 0 auto;
+	margin-top: 3.5rem;
+	border-radius: 50%;
+}
+.confirmation-page h4 {
+	margin-top: 2rem;
+}
+.confirmation-page .confirm-btn{
+	margin: 0 auto;
+	margin-top: 2rem;
+}
+.confirmation-page .confirm-btn button{
+	background-color: #f2f2f2 !important;
+	box-shadow:  -7px -7px 20px #fff9,
+	-4px -4px 5px 0px #fff9,
+	7px 7px 20px 0px #0001,
+	4px 4px 5px 0px #0001,
+	inset 0px 0px 0px 0px #fff9,
+	inset 0px 0px 0px 0px #0001,
+	inset 0px 0px 0px 0px #fff9,
+	inset 0px 0px 0px 0px #0001 !important;
+	width: 14rem;
+	height: 2.5rem;
+	color: var(--blue);
+	border-radius: 2.3rem;
+}
+.confirmation-page .confirm-btn button:hover , .confirmation-page .confirm-btn button:focus{
+	border: 2px solid var(--blue);
+}
 /* Loading-page */
 .loading-page-wrapper{
 	height: 100%;
@@ -608,6 +834,7 @@ display: flex;
 	-webkit-animation: spin 1s linear infinite ;
 	animation: spin 1s linear infinite;
 }
+
 @-webkit-keyframes spin {
 	0% { -webkit-transform: rotate(0deg);}
 	100% { -webkit-transform: rotate(360deg);}
@@ -706,12 +933,11 @@ font-size: 1.5rem;
 	}
 	.google-maps-sec .btn-info{
 		width: 17rem !important;
-		margin-top: 0.7rem;
-		background-color: var(--neon-green)!important;
+		
 		border: none !important;
-		color: white;
+		color: var(--blue);
 		position: absolute;
-		top: 5.7rem;
+		top: 5.8rem;
 		right: 5rem;
 
 	}
@@ -739,6 +965,12 @@ font-size: 1.5rem;
 	}
 	.google-maps-sec form{
 		margin-left: 4.3rem;
+	}
+	.origin-input label{
+		left: 1.5rem;
+	}
+	.destination-input label{
+		left: 1.5rem;
 	}
 	.elevator-progress{
 		display: flex;
@@ -819,13 +1051,13 @@ font-size: 1.5rem;
 	}
 	
 	.progress-title{
-		top: 10.2rem;
-		left:14.4rem;
+		top: 9.2rem;
+		left:10.1rem;
 	}
 	.progress-text{
-		top: 98px;
-		font-size: 3rem;
-		margin-left: 4.5rem;
+		top: 67px;
+		font-size: 2rem;
+		margin-left: 0.3rem;
 	}
 	.elevator-sec p {
 		font-size: 18px !important;
