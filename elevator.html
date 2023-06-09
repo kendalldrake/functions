@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <script src="https://kit.fontawesome.com/ab2155e76b.js" crossorigin="anonymous"></script> -->
+</head>
+<body>
+    <div class="main">
+<main class="elevator-sec">
+    <div class ="elevator-sec">
+        <div class="go-back"><a href="maps.html" ><i class="fa-solid fa-angle-left"></i></a></div>
+        <div class="title">
+            <div class="one"> <h4>2</h4></div>
+            <h3>Determine Your Elevator</h3>
+        </div>
+    <div class="timeinput">
+        <form>
+<div class="form-1">
+<label for="select-day"><i class="fa-regular fa-calendar"></i></label>
+    <select id="select-day">
+    </select>
+ </div>
+ <div class="form-2">
+    <label for="select-time"><i class="fa-regular fa-clock"></i></label>
+    <select id="select-time">
+    </select>
+    </div>
+    </form>
+    </div>
+    <br>
+    <p class="subtitle">Based on your selections, the best elevator to take is:</p>
+ <div class="elevator-progress">
+    <div class="grid-wrapper">
+    <div class="buttoncontainer grid-container">
+        <div class="elevator" data-id="L1"><button id="L1"><img src="./L1.png" alt="Elevator L1"></button><h5>Elevator L1 (Red Cage)</h5></div>
+        <div class="elevator" data-id="B1"><button id="B1"><img src="./B1.png" alt="Elevator B1"></button><h5>Elevator B1 (Opposite Lockers in the Lobby)</h5></div>
+        <div class="elevator " data-id="B2"><button id="B2"><img src="./B2.png" alt="Elevator B2"></button><h5>Elevator B2 (Opposite Lockers in the Lobby)</h5></div>
+        <div class="elevator" data-id="A1"><button id="A1"><img src="./A1.png" alt="Elevator A1"></button><h5>Elevator A1 (Past the Gallery)</h5></div>
+    </div>
+ </div>
+ <div class="progress-container-wrapper">
+    <div class="progress">
+       
+       <svg class="progress-circle" width = "200px" height = "200px" xmlns = "http://www.w3.org/2000/svg" >
+        <path class="progress-circle-back" 
+        d = " M6,80 a74,74 0 0,1 148,0"></path>
+    <path class="progress-circle-prog" d = "M6,80 a74,74 0 0,1 148,0"></path>
+       </svg>
+
+<!-- FOR DESKTOP SCREENS -->
+<!-- 
+       <div class="large-screen">
+        <svg class="progress-circle" width = "300px" height = "300px" xmlns = "http://www.w3.org/2000/svg" >
+        <path class="progress-circle-back" d=" M6,150 a144,144 0 0,1 288,0"></path>
+        <path class="progress-circle-prog" d=" M6,150 a144,144 0 0,1 288,0"></path>
+           </svg>
+       </div> -->
+
+       <div class="progress-text" id="percentage" data-progress="90">0%</div>
+      </div>
+      <div class="progress-title"><p>Occupancy</p></div>
+      </div>
+      </div>
+      <div class="elevator-directions">
+        <div class="icon-div">
+            <i class="fa-solid fa-location-arrow"></i>
+            <h4>Directions</h4>
+        </div>
+      <!-- <h4>Directions</h4> -->
+      <p>Enter Parsons School of Design on 2W 13th Street, turn right and the elevators will be on your right and left-hand sides.</p>
+      </div>
+
+    <div class="end-button">
+        <a href="feedback.html"><button>Continue</button></a>
+    </div>
+    <!-- <div id="heatmap">
+        <progress value="75" min="0" max="100" style="visibility:hidden;height:0;width:0;">75%</progress>
+        <div id="stat">75%</div>
+    </div>
+    <div id="heatmap">
+        <progress value="75" min="0" max="100" style="visibility:hidden;height:0;width:0;">75%</progress>
+        <div id="stat">75%</div>
+    </div>
+    <div id="heatmap">
+        <progress value="75" min="0" max="100" style="visibility:hidden;height:0;width:0;">75%</progress>
+        <div id="stat">75%</div>
+    </div>
+    <div id="heatmap">
+        <progress value="75" min="0" max="100" style="visibility:hidden;height:0;width:0;">75%</progress>
+        <div id="stat">75%</div>
+    </div> -->
+
+</main>
+</div>
+</div>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBm9bcNlzShlTyi64H8k27-eW3jv6LF4s&libraries=places"></script> -->
+<script src="./main.js"></script>
+    </body>
+    </html>
