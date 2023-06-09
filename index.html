@@ -46,14 +46,29 @@
         <div class="elevator" data-id="A1"><button id="A1"><img src="./A1.png" alt="Elevator A1"></button><h5>Elevator A1 (Past the Gallery)</h5></div>
     </div>
  </div>
+ <div class="progress-container-wrapper">
     <div class="progress">
+        <div class="small-screen">
        <svg class="progress-circle" width = "200px" height = "200px" xmlns = "http://www.w3.org/2000/svg" >
         <path class="progress-circle-back" 
         d = " M6,80 a74,74 0 0,1 148,0"></path>
     <path class="progress-circle-prog" d = "M6,80 a74,74 0 0,1 148,0"></path>
        </svg>
+</div>
+<!-- FOR DESKTOP SCREENS -->
+
+       <div class="large-screen">
+        <svg class="progress-circle" width = "300px" height = "300px" xmlns = "http://www.w3.org/2000/svg" >
+
+    
+        <path class="progress-circle-back" d=" M6,150 a144,144 0 0,1 288,0"></path>
+        <path class="progress-circle-prog" d=" M6,150 a144,144 0 0,1 288,0"></path>
+           </svg>
+       </div>
 
        <div class="progress-text" id="percentage" data-progress="90">0%</div>
+      </div>
+      <div class="progress-title"><p>Occupancy</p></div>
       </div>
       </div>
       <div class="elevator-directions">
