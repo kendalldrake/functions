@@ -40,14 +40,14 @@ if (selectedOption === "coffee") {
 
 var request = {
           origin: origin,
-          destination: destination,
+          destination: "Parsons School of Design, 2W 13th Street, New York, NY 10011, USA",
           travelMode: google.maps.TravelMode[selectedMode]
       };
 
       directionsService.route(request, function (result, status) {
           if (status == google.maps.DirectionsStatus.OK) {
               directionsDisplay.setDirections(result);
-              getDistanceMatrix(origin, destination, selectedMode, additionalTime);
+              getDistanceMatrix(origin,"Parsons School of Design, 2W 13th Street, New York, NY 10011, USA", selectedMode, additionalTime);
           } else {
               directionsDisplay.setDirections({ routes: [] });
               map.setCenter(myLatLng);
