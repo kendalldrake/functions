@@ -123,7 +123,7 @@ width: 350px;
 	top: 1.2rem;
 }
 .grid-wrapper{
-    margin-top: 3rem;
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
@@ -189,8 +189,8 @@ width: 350px;
     conic-gradient(var(--neon-green 75%), lightgrey 0);
 	/* content: "75%"; */
 	font-size: 2em;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 .progress{
 position: relative;
@@ -982,6 +982,7 @@ font-size: 1.5rem;
 		display: flex;
 	margin-left: 1.5rem;
 		align-items: center;
+	
 	}
 	.elevator-sec form{
 		display: flex!important;
@@ -990,17 +991,19 @@ font-size: 1.5rem;
 	.elevator-sec{
 		position: relative;
 		margin-left: 2rem;
+	    margin-bottom: 3rem;
 	}
 	.elevator-sec .end-button{
 		position: absolute;
 		top: 2rem;
 		left: 1.5rem;
-		top: 62.5rem;
+		top: 56.5rem;
+		margin-bottom: 2rem ;
 
 	}
 	.grid-wrapper .elevator{
-		width: 17rem;
-		height: 17rem;
+		width: 15rem;
+		height: 15rem;
 	}
 	.elevator-sec .end-button button{
 		margin-bottom: 4rem;
@@ -1018,7 +1021,7 @@ font-size: 1.5rem;
 	}
 	.elevator-sec .elevator-directions{
 		width: 36rem;
-		padding: 2.6rem;
+		padding: 2rem;
 		margin: 0;
 		margin-left: 1.5rem;
 	}
@@ -1036,25 +1039,20 @@ font-size: 1.5rem;
 		margin: 0 auto;
 	}
 	.elevator-sec .timeinput select{
-		height: 3.3rem;
+		height: 2.3rem;
 	}
 	.timeinput .form-1 label{
 	left: 1.3rem;
-	top: 1.7rem;
+	top: 1.2rem;
 	}
 	.elevator-sec .title h3{
-		font-size: 2.2rem;
+		font-size: 1.8rem;
 	}
 	.timeinput .form-2 label{
 		left: 1.3rem;
-		top: 1.7rem;
+		top: 1.2rem;
 	}
-	.small-screen{
-		display: none;
-	}
-	.large-screen{
-		display: block;
-	}
+	
 	
 	.progress-title{
 		top: 9.2rem;
@@ -1066,13 +1064,13 @@ font-size: 1.5rem;
 		margin-left: 0.3rem;
 	}
 	.elevator-sec p {
-		font-size: 18px !important;
+		font-size: 14px !important;
 	}
 	.elevator-sec .elevator-directions h4 {
-		font-size: 1.9rem;
+		font-size: 1.5rem;
 	}
 	.elevator-sec .elevator-directions .icon-div i {
-		font-size: 30px;
+		font-size: 26px;
 	}
   }
 input , select {
