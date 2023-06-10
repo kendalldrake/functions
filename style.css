@@ -92,7 +92,7 @@ width: 350px;
 	padding-left: 3rem;
 	margin-bottom: 1rem;
 	box-shadow: 2px 2px 27px -15px;
-	background-color: #f2f2f2 !important;
+	background-color: #f2f2f2 ;
 	box-shadow:  -7px -7px 20px #fff9,
 	-4px -4px 5px 0px #fff9,
 	7px 7px 20px 0px #0001,
@@ -411,9 +411,7 @@ padding-left: 3rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-.google-maps-sec .form-1 label{
-	/* margin-right: 0.7rem; */
+
 }
 .google-maps-sec form label{
 	color: var(--blue) !important;
@@ -437,6 +435,18 @@ input:focus-visible , input:hover , input:focus , select:hover, select:focus sel
 	/* margin-top: 0.7rem; */
 	padding: 0.2rem!important;
 	padding-left: 0.7rem!important;
+	background-color: #f2f2f2;
+	box-shadow:  -7px -7px 20px #fff9,
+	-4px -4px 5px 0px #fff9,
+	7px 7px 20px 0px #0001,
+	4px 4px 5px 0px #0001,
+	inset 0px 0px 0px 0px #fff9,
+	inset 0px 0px 0px 0px #0001,
+	inset 0px 0px 0px 0px #fff9,
+	inset 0px 0px 0px 0px #0001 !important;
+	/* border: none; 
+}
+.google-maps-sec .form-2 .map-select{
 	background-color: #f2f2f2 !important;
 	box-shadow:  -7px -7px 20px #fff9,
 	-4px -4px 5px 0px #fff9,
@@ -446,13 +456,9 @@ input:focus-visible , input:hover , input:focus , select:hover, select:focus sel
 	inset 0px 0px 0px 0px #0001,
 	inset 0px 0px 0px 0px #fff9,
 	inset 0px 0px 0px 0px #0001 !important;
-	/* border: none; */
 }
 .google-maps-sec .form-2 option{
 	/* padding-right: 0.3rem; */
-}
-.google-maps-sec .form-2 .mode-input{
-	/* margin-left: 1rem; */
 }
 .google-maps-sec .form-2 .stops-input{
 	margin-left: 0.8rem;
@@ -1069,7 +1075,9 @@ font-size: 1.5rem;
 		font-size: 30px;
 	}
   }
-
+input , select {
+	background-color: #c9d3dd !important;
+}
 /* 
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap');
